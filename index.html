@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Movie Tickets</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Welcome to the movie theater!</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <form id="movies">
+        <div class="col-md-4">
+          <label class="mr-sm-2" for="inlineFormCustomSelect">Choose your movie!</label>
+          <select class="custom-select mr-sm-2" id="movieSelection">
+           <option selected>Choose...</option>
+           <option value="blackPanther">Black Panther</option>
+           <option value="inception">Inception</option>
+           <option value="thor">Thor: Ragnorak</option>
+         </select>
+        </div>
+        <div class="col-md-4">
+          <label class="mr-sm-2" for="inlineFormCustomSelect">Select the time!</label>
+          <select class="custom-select mr-sm-2" id="movieTime">
+           <option selected>Choose...</option>
+           <option value="12:00PM">12:00PM</option>
+           <option value="7:00PM">7:00PM</option>
+         </select>
+        </div>
+        <div class="col-md-4">
+          <label class="mr-sm-2" for="inlineFormCustomSelect">Select your age!</label>
+          <select class="custom-select mr-sm-2" id="movieAge">
+           <option selected>Are you older than 60?</option>
+           <option value="yes">Yes</option>
+           <option value="no">No</option>
+         </select>
+        </div>
+        <button class="button" type="submit" name="button">Submit</button>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="results">
+          Your movie is at <span id="showtime"></span> and will cost $<span id="showtimePrice"></span>.00.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <span id="movieImage"></span>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -41,11 +41,11 @@ debugger;
 
 
     if (newTicket.movieName === "blackPanther") {
-      $("#movieImage").append("<img src='img/blackpanther.jpg'class='img-responsive'>");
+      $("#movieImageBlackPanther").show();
     } else if (newTicket.movieName === "thor") {
-      $("#movieImage").append("<img src='img/thor.jpg' class='img-responsive'>");
+      $("#movieImageThor").show();
     } else if (newTicket.movieName === "inception") {
-      $("#movieImage").append("<img src='img/inception.jpg' class='img-responsive'>");
+      $("#movieImageInception").show();
     }
   });
 });
